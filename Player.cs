@@ -8,19 +8,25 @@ namespace FIFA_Squad_Manager
 {
 	class Player
 	{
+		private string position;
 		private string name;
 		private int age;
 		private int ovr;
 		private float rating;
-		private readonly float index;
 
-		public Player(string name, int age, int ovr, float rating)
+		public Player(string position,string name, int age, int ovr, float rating)
 		{
-			this.name=name;
-			this.age=age;
-			this.ovr=ovr;
-			this.rating=rating;
-			this.index=;
+			this.position = position;
+			this.Name=name;
+			this.Age=age;
+			this.Ovr=ovr;
+			this.Rating=rating;
 		}
+
+		public string Position { get => position; set => position=value; }
+		public string Name { get => name; set => name = value; }
+		public int Age { get => age; set => age = value; }
+		public int Ovr { get => ovr; set => ovr = value; }
+		public float Rating { get => rating; set => rating=value; }
 	}
 }
